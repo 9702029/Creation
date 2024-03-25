@@ -1,8 +1,10 @@
 # Project objective
-A dnd global map making softwar where people are able to get hexs on a map and generate what they want on it.
-have the ability to choose hexs to build on, have a reposityry of items or use an ai to create what they want on it
+A dnd global map making software where people are able to get hexs on a map and generate what they want on it.
+#Aspects
+have the ability to choose hexs to build on, have a selection of items or use an ai to create what they want on it
 allow the creator to add descriptions and images
-
+## UML Class Diagram
+## Mockup
 ## Directions for Downloading 
 ## Mac:
 1. First ensure that python3 is installed on your computer which can be found here: [link](https://www.python.org/downloads/)
