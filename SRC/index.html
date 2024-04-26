@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HexGrid</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD2pDslwS4TB94QXQl_6T8Pdf9mEYh9bwxscIRTfwcbg&s');
-    background-size: cover;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexagon Grid</title>
+  <style>
+    /* Your CSS styles */
+  </style>
 </head>
+
 <body>
   <canvas id="canvas" width="1600" height="1000"></canvas>
+  <div id="uploadBar" class="upload-bar">
+    <!-- Your upload bar content -->
+  </div>
+
+  <div id="customizationScreen">
+    <!-- Your customization screen content -->
+  </div>
+
+  <!-- Terrain type selection bar/modal -->
+  <div id="terrainSelectionBar" style="display: none;">
+    <!-- Your terrain type selection content -->
+  </div>
+
+  <!-- Build button -->
+  <button id="buildButton">Build</button>
+
+  <!-- Move this div here -->
+  <div id="uploadedImageContainer"></div>
+
+  <!-- Your JavaScript file -->
   <script src="main.js"></script>
 </body>
+
 </html>
