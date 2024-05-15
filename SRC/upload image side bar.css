@@ -3,14 +3,14 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #f7f7f7;
   padding: 20px;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-out;
   transform: translateY(100%);
-  display: none; /* Hide the upload bar by default */
 }
 
 .upload-bar.show {
-  display: block; /* Display the upload bar when the 'show' class is added */
+  display: block;
+  transform: translateY(0); /* Change transform value to show the upload bar */
 }

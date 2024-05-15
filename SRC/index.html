@@ -4,35 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hexagon Grid</title>
+  <title>Hexagon Grid Customization</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    /* Your CSS styles */
+    body {
+      overflow: hidden;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD2pDslwS4TB94QXQl_6T8Pdf9mEYh9bwxscIRTfwcbg&s');
+      background-size: cover;
+    }
   </style>
 </head>
 
 <body>
+  <!-- Hexagon Grid Canvas -->
   <canvas id="canvas" width="1600" height="1000"></canvas>
-  <div id="uploadBar" class="upload-bar">
-    <!-- Your upload bar content -->
+
+  <!-- Modal for Customization -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Hexagon Customization</h2>
+      <form id="customizationForm">
+        <label for="hexColor">Hex Color:</label>
+        <input type="color" id="hexColor"><br><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </div>
 
-  <div id="customizationScreen">
-    <!-- Your customization screen content -->
-  </div>
+  <div id="grid-container"></div>
 
-  <!-- Terrain type selection bar/modal -->
-  <div id="terrainSelectionBar" style="display: none;">
-    <!-- Your terrain type selection content -->
-  </div>
-
-  <!-- Build button -->
-  <button id="buildButton">Build</button>
-
-  <!-- Move this div here -->
-  <div id="uploadedImageContainer"></div>
-
-  <!-- Your JavaScript file -->
-  <script src="main.js"></script>
+  <!-- JavaScript -->
+  <script src="hex-grid.js" defer></script>
+  <script src="main.js" defer></script>
 </body>
 
 </html>
